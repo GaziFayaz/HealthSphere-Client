@@ -1,7 +1,7 @@
 # HealthSphere
 Multi-Vendor Medicine E-Commerce Website
 
-## [Live Site Link](https://healthsphere-9f7cf.web.app)
+## [Live Site Link](https://health-sphere.gazifayazahmed.site)
 ### [Backend Repo](https://github.com/GaziFayaz/HealthSphere---Server)
 
 ### Admin User Credentials
