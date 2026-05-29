@@ -111,7 +111,7 @@ const Sales = () => {
                     <Text style={styles.tableCell}>{order.email}</Text>
                   </View>
                   <View style={styles.tableCol}>
-                    <Text style={styles.tableCell}>{item.unit_prices[0].price * item.quantity}</Text>
+                    <Text style={styles.tableCell}>{(item.unit_prices[0].price * item.quantity).toFixed(2)}</Text>
                   </View>
                 </View>
               );
@@ -156,12 +156,12 @@ const Sales = () => {
 						{orders.map((order, index) => {
 							return order?.items?.map((item, itemIndex) => {
 								return (
-									<tr key={itemIndex}>
+									<tr key={index + " " + itemIndex}>
 										<td>{item.medicine_name}
 										</td>
 										<td className="font-bold">{item.seller_email}</td>
 										<td className="font-bold">{order.email}</td>
-										<td className="font-bold">{item.unit_prices[0].price*item.quantity}</td>
+										<td className="font-bold">{(item.unit_prices[0].price*item.quantity).toFixed(2)}</td>
 									</tr>
 								);
 							});

@@ -24,17 +24,17 @@ const AdminHome = () => {
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
 				<div className="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg">
 					<h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-800 dark:text-white">
-						Total Sales: <span className="font-medium">{totalSales}</span>
+						Total Sales: <span className="font-medium">{totalSales.toFixed(2)}</span>
 					</h2>
 				</div>
 				<div className="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg">
 					<h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-800 dark:text-white">
-						Total Paid: <span className="font-medium">{totalPaid}</span>
+						Total Paid: <span className="font-medium">{totalPaid.toFixed(2)}</span>
 					</h2>
 				</div>
 				<div className="bg-gray-100 dark:bg-gray-700 p-4 rounded-lg">
 					<h2 className="text-xl sm:text-2xl lg:text-3xl font-semibold text-gray-800 dark:text-white">
-						Total Pending: <span className="font-medium">{totalPending}</span>
+						Total Pending: <span className="font-medium">{totalPending.toFixed(2)}</span>
 					</h2>
 				</div>
 			</div>
